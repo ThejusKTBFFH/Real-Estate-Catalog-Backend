@@ -1,0 +1,26 @@
+{
+  "name": "real-estate-catalog-backend",
+  "version": "1.0.0",
+  "description": "Real Estate Catalog Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThejusKTBFFH/Real-Estate-Catalog-Backend.git"
+  },
+  "author": "Thejus Samiron Devendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThejusKTBFFH/Real-Estate-Catalog-Backend/issues"
+  },
+  "homepage": "https://github.com/ThejusKTBFFH/Real-Estate-Catalog-Backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20"
+  }
+}
