@@ -1,5 +1,4 @@
-
-const User = require("../models/user");
+const User = require("../model/user");
 const router = require("express").Router();
 
 router.post("/signup", async (req, res) => {
@@ -18,7 +17,10 @@ router.post("/signup", async (req, res) => {
     user = await User.create({email, password});
     res.status(200).json({user});
   } catch (error) {
-    console.log(error);
+    res.json({
+        status:"failed",
+        message:error.message
+    })
   }
 });
 
