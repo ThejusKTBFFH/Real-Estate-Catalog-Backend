@@ -1,12 +1,3 @@
-// const mongoose = require("mongoose")
-
-// const userSchema = mongoose.Schema({
-//     email:String,
-//     password:String
-// })
-
-// const userModel = mongoose.model("userModel", userSchema )
-// module.exports = userModel
 
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
