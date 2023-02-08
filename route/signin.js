@@ -29,7 +29,11 @@ router.post('/signin', async (req, res) => {
    
 
         const options = {
+
             expires: new Date(Date.now() + 15 * 60 * 1000),
+
+     
+
             httpOnly: true,
         }
 

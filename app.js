@@ -1,4 +1,5 @@
 
+
 const express = require("express");
 const dotenv = require("dotenv")
 const connectDB = require("./database/connectDB");
@@ -6,6 +7,10 @@ const  signup  = require("./route/signup");
 const signin = require("./route/signin");
 const logout = require("./route/logout.js");
 const properties = require("./route/properties.js");
+
+
+
+
 const app = express();
 dotenv.config()
 const cors = require("cors");
@@ -29,6 +34,11 @@ app.use("/api",signup);
 app.use("/api", signin);
 app.use('/', logout);
 app.use('/', properties);
+
+
+app.use(cors());
+const cookieParser = require('cookie-parser')
+
 
 
 app.listen(process.env.PORT, async()=>{
