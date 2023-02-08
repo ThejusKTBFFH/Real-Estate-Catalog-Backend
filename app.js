@@ -1,7 +1,7 @@
 const express = require("express")
 const dotenv = require("dotenv")
-const route = require("../Real-Estate-Catalog-Backend/route/route")
-const connectDB = require("../Real-Estate-Catalog-Backend/database/connectDB")
+const route = require("../server/route/route")
+const connectDB = require("../server/database/connectDB")
 
 const app = express()
 dotenv.config()
