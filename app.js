@@ -1,5 +1,3 @@
-
-
 const express = require("express");
 const dotenv = require("dotenv")
 const connectDB = require("./database/connectDB");
@@ -8,6 +6,8 @@ const signin = require("./route/signin");
 const logout = require("./route/logout.js");
 const properties = require("./route/properties.js");
 const getProperties = require("./route/getProperties");
+
+const search = require("./route/search")
 
 
 
@@ -40,6 +40,8 @@ app.use('/', getProperties);
 
 app.use(cors());
 //const cookieParser = require('cookie-parser')
+
+app.use("/",search)
 
 
 
